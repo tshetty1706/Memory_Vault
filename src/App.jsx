@@ -1,17 +1,22 @@
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import Intro from './pages/Intro'
-import Dashboard from './pages/Dashboard'
+import DashboardLayout from './pages/DashboardLayout'
 import {BrowserRouter, Routes , Route} from 'react-router-dom'
 import './App.css'
 
+
 function App() {
+
+  let [darkMode, setDarkMode] = useState(localStorage.getItem("mode") === "true" || false);
+
+  useEffect(()=>localStorage.setItem("mode",darkMode),[darkMode]);
 
   return (
     <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Intro />} />
-          <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="/dashboard" element={<DashboardLayout setDarkMode={setDarkMode} darkMode={darkMode} />}>
 
               {/* 
               
