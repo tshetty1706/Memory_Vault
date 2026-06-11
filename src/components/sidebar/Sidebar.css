@@ -13,6 +13,12 @@
   border-right: 1px solid;
 
   transition: all 0.3s ease;
+  position: sticky;
+  top: 0; /* required for sticky positioning */
+  z-index: 50; /* keep the sidebar above page content while scrolling */
+  align-self: flex-start; /* ensure sticky works correctly inside flex containers */
+
+  
 }
 
 /* ====================

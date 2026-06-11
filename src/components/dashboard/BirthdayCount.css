@@ -1,0 +1,28 @@
+.birthday-card{
+  margin-top:2rem;
+
+  padding:2rem;
+
+  border-radius:20px;
+
+  background:
+    rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(192,132,252,0.15);
+
+  backdrop-filter:
+    blur(20px);
+}
+
+.birthday-card h2{
+  margin-bottom:1rem;
+}
+
+.birthday-card p{
+  font-size:2rem;
+
+  font-weight:600;
+
+  color:#c084fc;
+}

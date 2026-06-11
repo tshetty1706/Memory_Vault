@@ -107,6 +107,8 @@ export default function Intro() {
   const [W, setW] = useState(window.innerWidth);
   const [H, setH] = useState(window.innerHeight);
 
+  
+
   /* resize */
   useEffect(() => {
     function onResize() {

@@ -1,0 +1,34 @@
+.dashboard {
+  flex: 1;
+  min-height: 100vh;
+  padding: 2rem;
+  /* let the outer layout container handle scrolling so sidebar's sticky works */
+}
+
+/* ====================
+   DARK THEME
+==================== */
+
+.dashboard-dark {
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(192,132,252,0.08),
+      transparent 40%
+    ),
+    #05020f;
+
+  color: white;
+}
+
+/* ====================
+   LIGHT THEME
+==================== */
+
+.dashboard-light {
+  background: #faf8ff;
+  color: #1f1b2e;
+}
+
+
+

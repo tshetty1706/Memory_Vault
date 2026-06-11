@@ -7,6 +7,7 @@ import {
   FaStar,
   FaTv
 } from "react-icons/fa";
+import { NavLink } from 'react-router-dom'
 
 import { GiSpellBook } from "react-icons/gi";
 
@@ -14,18 +15,19 @@ function Sidebar({ setDarkMode, darkMode }) {
 
   const [activeItem, setActiveItem] = useState('Dashboard'); // navbar clicked item 
 
-  function renderNavItem(label, Icon) {
+  function renderNavItem(label, Icon, path) {
     const isActive = activeItem === label;
     return (
-      <button
+      <NavLink style={{textDecoration:"none"}}
         key={label}
+        to={path}
         className={`nav-item${isActive ? ' active' : ''}`}
-        onClick={() => setActiveItem(label)}
+        onClick={() =>setActiveItem(label)}
         aria-pressed={isActive}
       >
         <Icon />
         {label}
-      </button>
+      </NavLink>
     );
   }
 
@@ -45,12 +47,12 @@ function Sidebar({ setDarkMode, darkMode }) {
       </div>
 
       <nav className="sidebar-menu">
-        {renderNavItem('Dashboard', FaHome)}
-        {renderNavItem('Movies', FaFilm)}
-        {renderNavItem('Songs', FaMusic)}
-        {renderNavItem('Actors', FaStar)}
-        {renderNavItem('Cartoons', FaTv)}
-        {renderNavItem('Hobbies', GiSpellBook)}
+        {renderNavItem('Dashboard', FaHome, "/dashboard")}
+        {renderNavItem('Movies', FaFilm, "/movies")}
+        {renderNavItem('Songs', FaMusic, "/songs")}
+        {renderNavItem('Actors', FaStar, "/actors")}
+        {renderNavItem('Cartoons', FaTv, "/cartoons")}
+        {renderNavItem('Hobbies', GiSpellBook, "/hobbies")}
       </nav>
 
       <div className="theme-section">

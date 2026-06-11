@@ -1,0 +1,83 @@
+/* ====================
+   PROFILE CARD
+==================== */
+
+.profile-card {
+  background: rgba(255,255,255,0.03);
+
+  border:
+    1px solid rgba(192,132,252,0.15);
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  margin-bottom: 2rem;
+}
+
+.profile-card h1 {
+  margin-bottom: 1.5rem;
+}
+
+.field-group {
+  margin-top: 1.5rem;
+}
+
+.field-group label {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  opacity: 0.7;
+}
+
+/* ====================
+   INPUTS
+==================== */
+
+.profile-input {
+  width: 100%;
+
+  background: transparent;
+
+  border: none;
+
+  border-bottom:
+    1px solid rgba(192,132,252,0.25);
+
+  padding: 0.8rem 0;
+
+  color: inherit;
+
+  outline: none;
+
+  font-size: 1rem;
+}
+
+.profile-input:focus {
+  border-color: #c084fc;
+}
+
+.quote-box {
+  resize: none;
+  min-height: 90px;
+}
+
+
+
+/* ====================
+   GRID
+==================== */
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
