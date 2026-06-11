@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import "./Sidebar.css";
 import {
   FaHome,
@@ -14,6 +14,9 @@ import { GiSpellBook } from "react-icons/gi";
 function Sidebar({ setDarkMode, darkMode }) {
 
   const [activeItem, setActiveItem] = useState('Dashboard'); // navbar clicked item 
+
+  useEffect(()=>setActiveItem(window.location.pathname === "/" ? "Dashboard" : window.location.pathname.slice(1).charAt(0).toUpperCase() + window.location.pathname.slice(2)),[window.location.pathname]);
+  // This effect runs whenever the URL path changes, updating the active item based on the current route. It checks if the path is "/" to set "Dashboard" as active, otherwise it capitalizes the first letter of the path and sets it as active.
 
   function renderNavItem(label, Icon, path) {
     const isActive = activeItem === label;
