@@ -40,13 +40,15 @@ function Sidebar({ setDarkMode, darkMode }) {
     >
       <div className="sidebar-logo">
 
-        <h1>
-          Memory
-          <span>Vault</span>
-        </h1>
+        <NavLink style={{textDecoration:"none"}} to={"/"}>
+          <h1>
+            Memory
+            <span>Vault</span>
+          </h1>
 
-        <p>Your Personal Cosmos</p>
+          <p>Your Personal Cosmos</p>
 
+        </NavLink>
       </div>
 
       <nav className="sidebar-menu">

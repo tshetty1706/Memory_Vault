@@ -20,6 +20,40 @@
   color:#1f1b2e;
 }
 
+/* Light mode card & form overrides for better contrast */
+.movies-light .movie-card{
+  background: #ffffff;
+  border-color: rgba(192,132,252,0.12);
+  color: #1f1b2e;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+.movies-light .toolbar input,
+.movies-light .toolbar select{
+  background: #ffffff;
+  border: 1px solid rgba(192,132,252,0.12);
+  color: #1f1b2e;
+}
+
+.movies-light .modal-content{
+  background: #ffffff;
+  color: #1f1b2e;
+  border: 1px solid rgba(192,132,252,0.06);
+}
+
+.movies-light .modal-content input,
+.movies-light .modal-content select,
+.movies-light .modal-content textarea{
+  background: #ffffff;
+  color: #1f1b2e;
+  border: 1px solid rgba(192,132,252,0.12);
+}
+
+.movies-light .icon-btn{
+  background: rgba(31,27,46,0.03);
+  border-color: rgba(192,132,252,0.12);
+}
+
 .movies-header{
   display:flex;
   justify-content:space-between;

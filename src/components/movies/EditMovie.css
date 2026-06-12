@@ -72,6 +72,21 @@
   color:white;
 }
 
+/* Light mode overrides for edit modal */
+.movies-light .edit-modal{
+  background: #ffffff;
+  color: #1f1b2e;
+  border: 1px solid rgba(192,132,252,0.06);
+}
+
+.movies-light .edit-modal input,
+.movies-light .edit-modal textarea,
+.movies-light .edit-modal select{
+  background: #ffffff;
+  color: #1f1b2e;
+  border: 1px solid rgba(192,132,252,0.12);
+}
+
 .modal-buttons{
   display:flex;
   justify-content:flex-end;

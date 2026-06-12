@@ -44,3 +44,11 @@
 
   font-weight: 600;
 }
+
+/* Light mode tweaks for dashboard cards */
+.dashboard-light .stats-card{
+  background: #ffffff;
+  border-color: rgba(192,132,252,0.12);
+  color: #1f1b2e;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
