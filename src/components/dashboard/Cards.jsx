@@ -5,8 +5,8 @@ export default function Cards({darkMode}){
         { icon: "🎬", title: "Movies", count: 0 },
         { icon: "🎵", title: "Songs", count: 0 },
         { icon: "🎼", title: "Music", count: 0 },
-        { icon: "🎭", title: "Actors", count: 0 },
-        { icon: "📺", title: "Cartoons", count: 0 },
+        // { icon: "🎭", title: "Actors", count: 0 },
+        // { icon: "📺", title: "Cartoons", count: 0 },
         { icon: "🌿", title: "Hobbies", count: 0 },
     ];
 

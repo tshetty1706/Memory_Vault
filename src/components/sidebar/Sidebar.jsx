@@ -53,8 +53,8 @@ function Sidebar({ setDarkMode, darkMode }) {
         {renderNavItem('Dashboard', FaHome, "/dashboard")}
         {renderNavItem('Movies', FaFilm, "/movies")}
         {renderNavItem('Songs', FaMusic, "/songs")}
-        {renderNavItem('Actors', FaStar, "/actors")}
-        {renderNavItem('Cartoons', FaTv, "/cartoons")}
+        {/* {renderNavItem('Actors', FaStar, "/actors")}
+        {renderNavItem('Cartoons', FaTv, "/cartoons")} */}
         {renderNavItem('Hobbies', GiSpellBook, "/hobbies")}
       </nav>
 
