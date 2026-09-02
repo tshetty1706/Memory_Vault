@@ -1,7 +1,7 @@
 # 🌌 MemoryVault
 
 A personal digital vault built with React where users can preserve the things that define them — favorite movies, songs, hobbies, memories, and more. 
-**The project was built primarily to strengthen my practical React concept**
+**The project was built primarily to strengthen my practical React concept** 
 
 ---
 
